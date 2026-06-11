@@ -1,6 +1,7 @@
 # check-unused-exports
 
-Tiny Go tool that reports exported identifiers (constants, variables, types, functions, methods) that are never referenced outside test files.
+Tiny Go tool that reports exported identifiers (constants, variables, types, functions, methods)
+that are never referenced outside test files.
 
 ## Usage
 
@@ -12,7 +13,8 @@ Exits `0` when nothing is found, `1` when unused exports are detected.
 
 ## Limitation
 
-Uses name-based matching. Two identifiers with the same name (e.g. a method and a function both called `New`) are treated as one; a reference to either marks both as used.
+Uses name-based matching. Two identifiers with the same name (e.g. a method and a function both
+called `New`) are treated as one; a reference to either marks both as used.
 
 ## Example
 
@@ -30,4 +32,5 @@ go install github.com/guettli/check-unused-exports@latest
 
 ## Related
 
-- [guettli/check-conditions](https://github.com/guettli/check-conditions) — check all Kubernetes conditions
+- [guettli/check-conditions](https://github.com/guettli/check-conditions) — check all Kubernetes
+  conditions
